@@ -1,0 +1,11 @@
+# Python
+__pycache__/
+*.py[cod]
+venv/
+.env
+
+# Large Files
+*.bin
+*.pth
+*.gguf
+data/processed/

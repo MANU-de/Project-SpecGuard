@@ -1,0 +1,14 @@
+# Core runtime
+gymnasium
+numpy
+
+# Model and fine-tuning workflow
+torch
+transformers
+datasets
+accelerate
+peft
+bitsandbytes
+
+# Testing
+pytest

@@ -1,0 +1,2 @@
+"""Safety scoring model interface."""
+
