@@ -1,12 +1,44 @@
-# Python
+# --- Secrets & Config ---
+.env
+.env.local
+.env.*.local
+
+# --- Python Environment ---
+.venv/
+env/
+venv/
 __pycache__/
 *.py[cod]
-venv/
-.venv/
-.env
+*$py.class
 
-# Large Files
+# --- Large Files / Model Checkpoints ---
+# Don't track the actual model weights (they are in Hugging Face!)
+*.safetensors
 *.bin
+*.pt
 *.pth
 *.gguf
-data/processed/
+output/
+outputs/
+final_drafter_lora/
+final_critic_lora/
+
+# --- Hugging Face & Training Bloat ---
+.cache/
+huggingface/
+checkpoints/
+
+# --- Project-Specific Data ---
+# If your logs are small and want to showcase them, keep this.
+# If they become massive, comment the next line out.
+# evaluations/logs/*.json
+
+# --- OS Junk ---
+.DS_Store
+Thumbs.db
+
+# --- Other ---
+
+notebooks/
+data/raw/
+training/
